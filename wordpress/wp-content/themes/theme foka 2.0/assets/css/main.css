@@ -1,0 +1,278 @@
+body{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #009975;
+}
+
+.container__fluid{
+    
+    margin: 0;
+    padding: 0;
+   
+}
+
+hr{
+    width: 95%;
+}
+
+.logo{
+    
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.titulo{
+    margin-top: -20px;
+    margin-left: -15px;
+    display: inline-block;
+    text-align: center;
+    
+}
+
+.navbar{
+    background-color: #454d66;
+}
+
+.navbar-nav{
+
+    margin-top: -15px;
+    margin-bottom: -5px;
+    
+}
+
+
+.padre{
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* no-grap achica los items para acomodarlos en el mismo espacio */
+    justify-content: stretch;
+    box-sizing: border-box;
+    margin-top: 40px;
+    
+}
+
+.hijo{
+   
+    flex: 1 1 auto ;
+    
+
+}
+
+.hijo2{
+    margin-bottom: 10px;
+}
+
+.padre2{
+   
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    /* no-grap achica los items para acomodarlos en el mismo espacio */
+    justify-content: flex-start;
+    box-sizing: border-box;
+}
+
+
+
+.card{
+
+    width: 48%;
+    margin: 5px;
+    border-radius: 0;
+}
+
+.tarjeta{
+    
+    background-color: aqua;
+}
+
+.historia{
+ 
+background-color: #58b368;
+padding: 10px;
+box-sizing: border-box;
+border: solid 15px  #009975;
+
+ 
+ 
+}
+
+.aside{
+    
+    width: 96%;
+    margin-right: 10;
+    margin-top: 45px;
+    padding: 10px;
+}
+
+
+.footer{
+     
+   
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff591 ;
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+    bottom: 0px;
+   
+  
+   
+}
+
+.rrss{
+    
+    width: 70px;
+    padding-top: 30px;
+}
+
+.single{
+    margin-left: 50px;
+    background-color: pink;
+    box-sizing: border-box;
+    border-radius: 1.5vw;
+    text-align: center;
+    margin-top: 45px;
+}
+
+.singleImg{
+    border-radius: 1.5vw;
+}
+
+.btn{
+    background-color: aqua;
+    border-radius: 25vw;
+    margin-bottom: 10px;
+}
+
+
+
+@media (max-width: 1080px) { 
+
+    body{
+
+        width:93vw
+    }
+    
+    .navbar{
+        
+        width:100.40vw;
+        margin-bottom: 20px;
+        
+        
+    }
+
+    .logo{
+        
+        margin-top: -20px;
+        padding-left: 25%;
+        padding-right: 25%;
+       /* al agregar widht se corre del medio */
+        /* width: 300px; */
+        
+       
+        
+    }
+    .navbar-nav{
+
+        margin-top: 5px;
+        
+        
+    }
+
+    .padre{
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        margin-left: 4.5vw;
+        
+    }
+
+    .padre2{
+   
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        
+    }
+    .padre3{
+   
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      
+       
+    }
+    
+    .hijo{
+        /*funciona con el padre y padre2 */
+        flex: 1 1 auto ;    
+    
+    }
+
+    .hijo2{
+        /*funciona con el padre3 */
+        width: 47.62428%;
+        margin: 3px;
+        padding: 0;
+        
+    } 
+    
+
+    .navbar-toggler{
+        
+        border: none;
+        margin-left: -16px;
+
+    }
+
+    .card{
+    
+        width: 100%;
+        
+    
+    }
+
+    .historia{
+
+        margin-top: 25px;
+        border: none;
+    }
+
+    .aside{
+    
+        width: 90%;
+        margin-left: 40px;
+    
+    }
+    
+    .footer{
+
+        width:100vw;
+        
+    }
+
+    .single{
+        
+        background-color: pink;
+        border-radius: 1.5vw;
+        text-align: center;
+        margin-top: 5px;
+        margin-left: 28px;
+    }
+    
+    .singleImg{
+        border-radius: 1.5vw;
+    }
+    
+
+    
+}

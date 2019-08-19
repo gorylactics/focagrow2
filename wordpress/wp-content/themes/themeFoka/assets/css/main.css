@@ -1,0 +1,351 @@
+body{
+
+    background-color: #3f3250 ;
+}
+
+.navbar{
+
+    background-color: #6e3667;
+
+}
+
+.logo{
+    
+    width: 200px;
+    
+}
+
+
+.row{
+
+    padding: 0;
+    box-sizing: border-box;  
+    
+}
+
+
+.card-body{
+    
+    background-color: #4abdac;
+    border: solid 4px #6e3667; 
+    z-index: 1;
+ 
+}
+
+.col-lg-9{
+
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    position: relative;
+
+}
+
+.col-lg-3{
+
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+
+}
+
+.entradas{
+   
+    float: left;
+    
+}
+
+.menu-item{
+    
+    margin-top: 18px; 
+    font-size: 27px;
+    font-family: 'Lobster Two', cursive;
+
+}
+
+.navbar-dark .navbar-nav .nav-link {
+   
+    color:#3cc47c;
+}
+
+.titulo{
+    
+    margin-left:8.5%;
+    background-color: #3f3250 ;
+    border-radius: 25px 25px 25px 25px;
+    color: #f7b733;
+    font-family: 'Bungee Inline', cursive;
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+.navbar-toggler {
+    
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+
+}
+
+
+
+/* aside */
+
+.sidebar{
+   
+    margin-top: 9px;
+    
+}
+
+.destacado{
+    
+    position: absolute;
+    margin:  10px;
+    color: orange;
+    font-size: 25px;
+    font-family: 'Bungee Inline', cursive;
+    border-radius: 20px 20px 20px 20px;
+    padding: 8px;
+    border: solid 2px white; 
+    background-color: #6e3667;
+    display: inline-block;
+    z-index: 9;
+
+}
+
+.destacado_secundario{
+    
+    position: absolute;
+    margin:  -10px;
+    color: orange;
+    font-size: 18px;
+    font-family: 'Bungee Inline', cursive;
+    border-radius: 20px 20px 20px 20px;
+    padding: 8px;
+    border: solid 2px white; 
+    background-color: #6e3667;
+    display: inline-block;
+    z-index: 9;
+
+}
+ 
+.elpost{
+     
+    margin-top: 35px;
+    margin-bottom: 35px;
+    border-radius: 25px 25px 25px 25px ;
+  
+}
+
+img.img-fluid.mb-3.single.wp-post-image{
+     
+    margin-top: 15px;
+     border-radius: 25px 25px 25px 25px ;
+     display: block;
+     border: solid white 5px;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+
+ img.img-fluid.mb-3.wp-post-image{
+    
+    margin-top: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ ul.dropdown-menu.show{
+     
+    background-color: #3f3250;
+    border-radius: 25px 25px 25px 25px ;
+ 
+}
+
+ a.dropdown-item{
+    
+    color: #3cc47c;
+ }
+
+
+p{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 25px;
+
+}
+
+ /* footer */
+.padre{
+
+display: inline-flex;
+
+}
+
+.footer{
+    
+    margin-top: 35px;  
+     
+}
+
+.bg-none{
+    
+    background-color: #231e20;
+    
+}
+
+.rrss{
+    
+    width: 50px;
+    float: left;
+   
+}
+
+.sidebar div.card-body h4{
+    
+    background-color: #3f3250 ;
+    border-radius: 25px 25px 25px 25px;
+    color:#3cc47c;
+    font-family: 'Bungee Inline', cursive;
+    text-align: center;
+    font-size: 28px;
+    
+ }
+
+label.screen-reader-text{
+    display: none;
+}
+
+input.btn.btn-primary.btn-block{
+    background-color: #f7b733 ;
+    border: solid 2px #3f3250 ;
+}
+
+.tituloSeccion{
+    
+    color: orange;
+    font-size: 33px;
+    font-family: 'Bungee Inline', cursive;
+ 
+    
+}
+.elpost h2{
+    color: #3f3250 ;
+    display: inline;
+    text-align:center;
+    font-family: 'Lobster Two', cursive;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+a.btn.btn-primary.btn-block{
+    background-color: orange;
+    border: solid 2px purple;
+}
+
+h2{
+    
+    position: absolute;
+    margin:  -10px;
+    color: orange;
+    font-size: 18px;
+    font-family: 'Bungee Inline', cursive;
+    border-radius: 20px 20px 20px 20px;
+    padding: 8px;
+    border: solid 2px white; 
+    background-color: #6e3667;
+    display: inline-block;
+    z-index: 9;
+}
+
+h3{
+    color: orange;
+    font-size: 28px;
+    font-family: 'Bungee Inline', cursive;
+    border-radius: 20px 20px 20px 20px;
+    padding: 8px;
+    border: solid 2px white; 
+    background-color: #6e3667;
+    display: inline-block;
+    
+}
+ /* cell */
+ @media (max-width: 700px) { 
+    
+    .logo{
+        
+        width: 200px;
+        margin-left: 35%;
+        margin-top: 5px;
+        
+    }
+
+    .navbar-toggler{
+        margin-top: 10px;
+        margin-left: 140px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }  
+        
+    
+   
+    
+    .titulo{
+    
+        margin-left:10%;
+        background-color: #3f3250 ;
+        border-radius: 25px 25px 25px 25px;
+        color: #f7b733;
+        font-family: 'Bungee Inline', cursive;
+        text-align: center;
+        font-size: 28px;
+        
+    }
+
+     /* footer */
+     .padre{
+        
+        margin-bottom: 26px;
+        margin-top: -20px;
+        height: 80px;
+        display: inline-flex;
+        
+    }
+    
+    .footer{
+        margin-top: 25px;
+        
+    }
+        
+    .bg-none{
+            
+        background-color: #231e20;
+            
+    }
+        
+    .rrss{
+         
+        width: 50px;
+        margin-top:20px;
+        margin-bottom: -40px;
+        margin-left: auto;
+        margin-right: auto;
+            
+           
+    }
+        
+    h6{
+            display: none;
+        }
+        
+ }   
+ /* fin cell */
+
+
+ 
