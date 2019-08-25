@@ -7,10 +7,9 @@ body{
     background-color: #009975;
 }
 
-.escritorio{
+.recomendado{
     width: 100%;
-    padding: 10px;
-    margin: 5px;
+
 }
 
 .container__fluid{
@@ -172,12 +171,6 @@ border: solid 15px  #009975;
         margin-bottom: 20px;
         
         
-    }
-
-    .escritorio{
-        width: 100%;
-    padding: 10px;
-    margin: 5px;
     }
 
     .logo{
