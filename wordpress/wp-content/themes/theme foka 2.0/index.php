@@ -51,21 +51,33 @@
           <div class="col-lg-12 padre padre3">
             
             <span class="col-lg-3 hijo2">
-              <a href="">
-                <img class="recomendado" src="<?php bloginfo('template_url')?>/adr.png" alt="">
-              </a>
+            <?php 
+            // The Query
+            $the_query = new WP_Query( array( 'posts_per_page' => 9,  'category_name' => 'recomendado')); 
+
+            // The Loop
+            if ( $the_query->have_posts() ) : ?>
+                
+                <?php while ( $the_query->have_posts() ) :
+                    $the_query->the_post(); ?>
+                    
+                        <a href="<?php the_permalink() ?>">
+                            <?php if ( has_post_thumbnail() ) 
+                                {the_post_thumbnail('post-thumbnails' , array('class' => 'img-fluid mb-3'));
+                                }
+                            ?>  
+                        </a>
+                        <hr>
+                    </div>
+                <?php endwhile ?>
+            <?php wp_reset_postdata();
+                    else : ?>
+                        <p>no posts found </p> 
+                <?php endif; ?>  
+              
             </span>
 
-            <span class="col-lg-3 hijo2">
-                <a href="">
-                  <img class="recomendado" src="<?php bloginfo('template_url')?>/adr.png" alt="">
-                </a>
-              </span>
-              <span class="col-lg-3 hijo2">
-                  <a href="">
-                    <img class="recomendado" src="<?php bloginfo('template_url')?>/adr.png" alt="">
-                  </a>
-                </span>
+            
                   
           </div>
           <div class=" padre col-lg-12">
@@ -77,21 +89,7 @@
               <button class="btn btn-block"><p style="text-align: center;">
                 <a href="single.html">click aca</a></p></button>
             </div>
-            <div class="historia col-lg-3">
-              <img src="<?php bloginfo('template_url')?>/adr.png" alt="" class="img-fluid">
-              <p style="margin: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ea blanditiis. Aspernatur error, architecto, optio illo deleniti nam vel maxime sunt et aliquam numquam dignissimos omnis asperiores dicta voluptas cumque!</p>
-              <a href="single.html">click aca</a>
-            </div>
-            <div class="historia col-lg-3">
-              <img src="<?php bloginfo('template_url')?>/adr.png" alt="" class="img-fluid">
-              <p style="margin: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ea blanditiis. Aspernatur error, architecto, optio illo deleniti nam vel maxime sunt et aliquam numquam dignissimos omnis asperiores dicta voluptas cumque!</p>
-              <a href="single.html">click aca</a>
-            </div>
-            <div class="historia col-lg-3">
-              <img src="<?php bloginfo('template_url')?>/adr.png" alt="" class="img-fluid">
-              <p style="margin: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ea blanditiis. Aspernatur error, architecto, optio illo deleniti nam vel maxime sunt et aliquam numquam dignissimos omnis asperiores dicta voluptas cumque!</p>
-              <a href="single.html">click aca</a>
-            </div>
+           
           </div>
           
       </div>
