@@ -7,11 +7,6 @@ body{
     background-color: #009975;
 }
 
-.recomendado{
-    width: 100%;
-
-}
-
 .container__fluid{
     
     margin: 0;
@@ -24,8 +19,8 @@ hr{
 }
 
 .logo{
-    opacity: 0.1;
-    filter: grayscale(100%);
+    /* opacity: 0.1;
+    filter: grayscale(100%); */
     padding-left: 15%;
     padding-right: 15%;
 }
@@ -64,16 +59,6 @@ hr{
     
 }
 
-.hijo{
-   
-    flex: 1 1 auto ;
-    
-
-}
-
-.hijo2{
-    margin-bottom: 10px;
-}
 
 .padre2{
    
@@ -85,7 +70,28 @@ hr{
     box-sizing: border-box;
 }
 
+.hijo{
+   
+    flex: 1 1 auto ;
+    
 
+}
+
+.hijo2{
+    margin-bottom: 10px;
+}
+
+.contenedor__recomendados{
+    
+    margin: 0;
+    padding: 0;
+}
+.recomendado{
+    margin: 0;
+    padding: 0;
+    width: 200px;
+   
+   }
 
 .card{
 

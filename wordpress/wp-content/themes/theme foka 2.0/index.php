@@ -81,7 +81,34 @@
                   
           </div>
           <div class=" padre col-lg-12">
-            <h3>Historio del</h3>
+          <h3>Historias de una foca</h3>
+
+          <?php 
+            // The Query
+            $the_query = new WP_Query( array( 'posts_per_page' => 9,  'category_name' => 'reportajes')); 
+
+            // The Loop
+            if ( $the_query->have_posts() ) : ?>
+                
+                <?php while ( $the_query->have_posts() ) :
+                    $the_query->the_post(); ?>
+                    
+                        <a href="<?php the_permalink() ?>">
+                            <?php if ( has_post_thumbnail() ) 
+                                {the_post_thumbnail('post-thumbnails' , array('class' => 'img-fluid mb-3'));
+                                }
+                            ?>  
+                        </a>
+                        <hr>
+                    </div>
+                <?php endwhile ?>
+            <?php wp_reset_postdata();
+                    else : ?>
+                        <p>no posts found </p> 
+                <?php endif; ?>  
+
+
+            
             <hr>
             <div class="historia col-lg-3">
               <img src="<?php bloginfo('template_url')?>/adr.png" alt="" class="img-fluid">
