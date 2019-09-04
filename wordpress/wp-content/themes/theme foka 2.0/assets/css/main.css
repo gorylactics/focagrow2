@@ -81,15 +81,18 @@ hr{
     margin-bottom: 10px;
 }
 
-.contenedor__recomendados{
-    
-    margin: 0;
-    padding: 0;
+.contenedorRecomendados{
+   padding-left: 40px;
 }
+
 .recomendado{
     margin: 0;
+   margin-bottom: 5px;
     padding: 0;
-    width: 200px;
+    width: 33%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 10px 10px ;
    
    }
 
@@ -254,6 +257,18 @@ border: solid 15px  #009975;
         
     
     }
+
+    .recomendado{
+        margin: 0;
+        margin-left: 1%;
+        margin-bottom: 5px;
+        padding: 0;
+        width: 48%;
+        height: 200px;
+        object-fit: cover;
+
+       
+       }
 
     .historia{
 
