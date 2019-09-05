@@ -84,31 +84,36 @@
            
 
             
-                  
+             <hr>     
           </div>
-          <hr>
-          <div class="col-lg-12 contenedorRecomendados">
-        
-        
-        <a href="recomendados">
+          <div class="col-lg-12">
+          <a href="reportajes">
           <h3 class="mt-3" style="text-align: center;">Historias de una foca</h3>
         </a>
         <hr>
+        </div>
+          <div class="col-lg-12 contenedorNET">
+        
+        
+       
           <?php 
           // The Query
-          $the_query = new WP_Query( array( 'posts_per_page' => 9,  'category_name' => 'reportajes'));
+          $the_query = new WP_Query( array( 'posts_per_page' => 4,  'category_name' => 'reportajes'));
           // The Loop
           if ( $the_query->have_posts() ) : ?>    
             <?php while ( $the_query->have_posts() ) :
                           $the_query->the_post(); ?>
-              
-              
-                <a href="<?php the_permalink() ?>">
-                  <?php if ( has_post_thumbnail() ) 
-                        {the_post_thumbnail('post-thumbnails' , array('class' => 'img-fluid recomendado '));
+             <div class="historia col-lg-3">
+              <a href="<?php the_permalink() ?>">
+              <?php if ( has_post_thumbnail() ) 
+                        {the_post_thumbnail('post-thumbnails' , array('class' => 'img-fluid recomendados '));
                         }
                         ?>
-                </a>
+              <p><?php the_excerpt() ?></p>
+              
+            </div> 
+              
+                
                       
         
                 <?php endwhile ?>

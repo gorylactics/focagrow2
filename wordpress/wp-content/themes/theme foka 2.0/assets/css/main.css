@@ -6,7 +6,14 @@ body{
     box-sizing: border-box;
     background-color: #009975;
 }
-
+.contenedorNET{
+    margin: 10px auto;
+    width: 60%;
+   
+    display: flex;
+    align-items: unset;
+    justify-content: center;   
+}
 .container__fluid{
     
     margin: 0;
@@ -91,14 +98,7 @@ hr{
    
    }
 
-   .card-columns{
-   
-   
-    padding: 0;
-    display: flex;
-    
-   
-   }
+  
 
 .card{
 
@@ -177,6 +177,13 @@ border: solid 15px  #009975;
 
 
 @media (max-width: 1080px) { 
+    .contenedorNET{
+        margin-left: 15px;
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+         
+    }
 
     body{
 
