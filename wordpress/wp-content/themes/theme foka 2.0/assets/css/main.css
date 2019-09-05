@@ -91,6 +91,15 @@ hr{
    
    }
 
+   .card-columns{
+   
+   
+    padding: 0;
+    display: flex;
+    
+   
+   }
+
 .card{
 
     width: 48%;
