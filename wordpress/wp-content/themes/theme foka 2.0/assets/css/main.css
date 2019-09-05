@@ -40,12 +40,7 @@ hr{
     
 }
 
-.navbar-nav{
 
-    /* margin-top: -15px;
-    margin-bottom: -5px; */
-    
-}
 
 
 .padre{
@@ -57,7 +52,6 @@ hr{
     justify-content: stretch;
     box-sizing: border-box;
     margin-top: 40px;
-    
 }
 
 
@@ -125,8 +119,10 @@ border: solid 15px  #009975;
     width: 96%;
     margin-right: 10;
     margin-top: 45px;
-    padding: 10px;
+    padding: 5px;
 }
+
+
 
 
 .footer{
