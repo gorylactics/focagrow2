@@ -19,10 +19,11 @@ hr{
 }
 
 .logo{
+    margin-top: 20px;
     /* opacity: 0.1;
     filter: grayscale(100%); */
-    padding-left: 15%;
-    padding-right: 15%;
+    padding-left: 12%;
+    padding-right: 12%;
 }
 
 .titulo{
@@ -41,8 +42,8 @@ hr{
 
 .navbar-nav{
 
-    margin-top: -15px;
-    margin-bottom: -5px;
+    /* margin-top: -15px;
+    margin-bottom: -5px; */
     
 }
 
@@ -187,9 +188,9 @@ border: solid 15px  #009975;
 
     .logo{
         
-        margin-top: -20px;
-        padding-left: 25%;
-        padding-right: 25%;
+        margin-top: 25px;
+        padding-left: 23%;
+        padding-right: 23%;
        /* al agregar widht se corre del medio */
         /* width: 300px; */
         
@@ -271,7 +272,7 @@ border: solid 15px  #009975;
        }
 
     .historia{
-
+        margin-left: 5px;
         margin-top: 25px;
         border: none;
     }
@@ -279,7 +280,8 @@ border: solid 15px  #009975;
     .aside{
     
         width: 90%;
-        margin-left: 40px;
+        margin-left: 30px;
+        background-color: orangered;
     
     }
     
