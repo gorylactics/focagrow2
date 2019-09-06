@@ -11,7 +11,7 @@
     
       <div class="container padre col-lg-9">
         <div class="card">
-          <a href="semillas">
+          <a href="semilla">
             <img class="img-fluid" src="<?php bloginfo('template_url')?>/assets/img/secciones/semillas.JPEG" alt="">
           </a>
         </div>
