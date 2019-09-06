@@ -155,18 +155,6 @@ border: solid 15px  #009975;
     padding-top: 20px;
 }
 
-.single{
-    margin-left: 50px;
-    background-color: pink;
-    box-sizing: border-box;
-    border-radius: 1.5vw;
-    text-align: center;
-    margin-top: 45px;
-}
-
-.singleImg{
-    border-radius: 1.5vw;
-}
 
 .btn{
     background-color: aqua;
@@ -303,18 +291,7 @@ border: solid 15px  #009975;
         
     }
 
-    .single{
-        
-        background-color: pink;
-        border-radius: 1.5vw;
-        text-align: center;
-        margin-top: 5px;
-        margin-left: 28px;
-    }
     
-    .singleImg{
-        border-radius: 1.5vw;
-    }
     
 
     
