@@ -14,17 +14,21 @@
         <div class="col-lg-12">   
           <?php 
           // The Query
-          $the_query = new WP_Query( array( 'posts_per_page' => 6,  'category_name' => 'sativas-feminizadas'));
+          $the_query = new WP_Query( array( 'posts_per_page' => 6,  'category_name' => 'reportajes'));
           // The Loop
           if ( $the_query->have_posts() ) : ?>    
             <?php while ( $the_query->have_posts() ) :
                           $the_query->the_post(); ?>
+            <div class="card col-lg-3">
                 <a href="<?php the_permalink() ?>">
+                <p><?php the_title() ?></p>
                   <?php if ( has_post_thumbnail() ) 
-                        {the_post_thumbnail('post-thumbnails' , array('class' => 'img-fluid recomendado '));
+                        {the_post_thumbnail('post-thumbnails' , array('class' => 'img-fluid  '));
                         }
                     ?>
+                    <?php the_excerpt() ?>
                 </a>
+                </div>
             <?php endwhile ?>
             <?php wp_reset_postdata();
                     else : ?>

@@ -14,11 +14,25 @@ body{
     align-items: unset;
     justify-content: center;   
 }
+
 .container__fluid{
     
     margin: 0;
     padding: 0;
    
+}
+
+.productos{
+    display: flex;
+    align-items: unset;
+    
+    flex-direction: nowrap;
+    width: 60%;
+    
+}
+
+.contenedorProductos{
+   border: solid 2px black;
 }
 
 hr{
@@ -88,8 +102,8 @@ hr{
 }
 
 .recomendado{
-    margin: 0;
-   margin-bottom: 5px;
+
+  
     padding: 0;
     width: 33%;
     height: 200px;
@@ -272,7 +286,7 @@ border: solid 15px  #009975;
     }
 
     .historia{
-        margin-left: 5px;
+       
         margin-top: 25px;
         border: none;
     }
