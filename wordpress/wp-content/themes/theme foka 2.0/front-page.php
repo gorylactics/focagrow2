@@ -80,7 +80,7 @@
   <div class="col-lg-12 padreProducto">   
           <?php 
           // The Query
-          $the_query = new WP_Query( array( 'posts_per_page' => 4,  'category_name' => 'reportajes , recomendados'));
+          $the_query = new WP_Query( array( 'posts_per_page' => 8,  'category_name' => 'reportajes , recomendados'));
           // The Loop
           if ( $the_query->have_posts() ) : ?>    
             <?php while ( $the_query->have_posts() ) :

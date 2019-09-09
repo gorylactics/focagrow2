@@ -9,7 +9,8 @@
                         <?php the_title() ?>
                     </h3>
                     <?php if ( has_post_thumbnail() ) {
-                    the_post_thumbnail('post-thumbnails' , array('class' => 'img-fluid mb-3 single'));
+                    the_post_thumbnail('medium' , array('class' => 'img-fluid 
+                    '));
                     }?>
                    
                 <p>
