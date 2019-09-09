@@ -22,18 +22,19 @@ body{
    
 }
 
-.productos{
+.padreProducto{
+   
     display: flex;
-    align-items: unset;
-    
-    flex-direction: nowrap;
-    width: 60%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* no-grap achica los items para acomodarlos en el mismo espacio */
+    justify-content: center;
+    box-sizing: border-box;
+   
     
 }
 
-.contenedorProductos{
-   border: solid 2px black;
-}
+
 
 hr{
     width: 95%;
@@ -243,6 +244,18 @@ border: solid 15px  #009975;
       
        
     }
+
+    .padreProducto{
+   
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        /* no-grap achica los items para acomodarlos en el mismo espacio */
+        justify-content: stretch;
+        box-sizing: border-box;
+       
+        
+    }
     
     .hijo{
         /*funciona con el padre y padre2 */
@@ -289,6 +302,7 @@ border: solid 15px  #009975;
        
         margin-top: 25px;
         border: none;
+        margin-left: 20px;
     }
 
     .aside{
