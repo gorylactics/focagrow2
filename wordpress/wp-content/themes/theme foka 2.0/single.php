@@ -20,7 +20,7 @@
 
 
                     <a href="javascript:history.back()"> 
-                    <input type="button" value=”Volver  onclick=”history.back(-1)” class="btn  btn-block"/></a>
+                    <input type="button" value=”Volver  onclick=”history.back(-1)” class="btn  btn-block"/>ver todo</a>
 
             
 

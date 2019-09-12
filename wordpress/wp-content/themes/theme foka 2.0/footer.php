@@ -1,18 +1,17 @@
 <!-- footer -->
 <div class="container__fluid footer">
-      
-    <a href="#">
-      <img class="rrss"  src="<?php bloginfo('template_url')?>/assets/img/rrss/instagram-brands.svg" alt="">
+<a href="">      
+<img class="rrss"  src="<?php bloginfo('template_url')?>/assets/img/rrss/instagram-brands.svg" alt="">
       <p>Conoce Mas</p>
     </a>
   
     <a href="#">
-      <img class="rrss"  src="<?php bloginfo('template_url')?>/assets/img/rrss/instagram-brands.svg" alt="">
+      <img class="rrss"  src="<?php bloginfo('template_url')?>/assets/img/rrss/globe-solid.svg" alt="">
       <p>www.focagrow.cl</p>
     </a>
   
     <a href="#">
-      <img class="rrss"  src="<?php bloginfo('template_url')?>/assets/img/rrss/instagram-brands.svg" alt="">
+      <img class="rrss"  src="<?php bloginfo('template_url')?>/assets/img/rrss/whatsapp-brands.svg" alt="">
       <p>Compra Aqui</p>
     </a>
 

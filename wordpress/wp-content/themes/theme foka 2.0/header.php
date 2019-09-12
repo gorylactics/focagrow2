@@ -18,9 +18,10 @@
           <img  class="img-fluid logo" 
                 src="<?php bloginfo('template_url')?>/assets/img/partes/logo.png" alt="">
         </a>
-        <h3 class="col-lg-6 titulo">focagrow <br> cultivo y parafernalia
-        </h3>
+        <h2 class="col-lg-6 titulo">Focagrow</h2><h1>cultivo y parafernalia</h1>
         
+        <hr class="my-0 mb-3">
+
         <button class="navbar-toggler" 
                 type="button" 
                 data-toggle="collapse" 

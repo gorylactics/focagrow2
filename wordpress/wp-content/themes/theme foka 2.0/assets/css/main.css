@@ -4,7 +4,26 @@ body{
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    background-color: #009975;
+    background-color: #B0C4DE;
+      
+      
+}
+h1{
+    font-size: 45px;
+    margin: 0;
+    font-family: 'Lobster Two', cursive;
+    color: #B0C4DE;
+}
+
+h2{
+    font-size: 45px;
+    margin: 0;
+    font-family: 'Lobster Two', cursive;
+    color: #B0C4DE;
+}
+h3{
+    
+    font-family: 'Bungee Inline', cursive;
 }
 .contenedorNET{
     margin: 10px auto;
@@ -129,10 +148,10 @@ hr{
 
 .historia{
  
-background-color: #58b368;
+background-color: #f5f2f0;
 padding: 10px;
 box-sizing: border-box;
-border: solid 15px  #009975;
+border: solid 5px #B0C4DE;
 
  
  
@@ -144,6 +163,7 @@ border: solid 15px  #009975;
     margin-right: 10;
     margin-top: 45px;
     padding: 5px;
+    background-color: #d1d1d1;
 }
 
 
@@ -154,7 +174,7 @@ border: solid 15px  #009975;
    
     display: flex;
     justify-content: space-around;
-    background-color: #fff591 ;
+    background-color: #454d66 ;
     text-align: center;
     margin-top: 30px;
     width: 100%;
@@ -168,8 +188,11 @@ border: solid 15px  #009975;
     
     width: 40px;
     padding-top: 20px;
+   
 }
-
+.rrss path{
+    background-color: orangered;
+}
 
 .btn{
     background-color: aqua;
@@ -180,6 +203,24 @@ border: solid 15px  #009975;
 
 
 @media (max-width: 1080px) { 
+
+    h1{
+        font-size: 32px;
+        margin: 0;
+        font-family: 'Lobster Two', cursive;
+        color: #B0C4DE;
+    }
+    
+    h2{
+        font-size: 32px;
+        margin: 0;
+        font-family: 'Lobster Two', cursive;
+        color: #B0C4DE;
+    }
+    h3{
+        
+        font-family: 'Bungee Inline', cursive;
+    }
     .contenedorNET{
         margin-left: 15px;
         width: 100%;
