@@ -1,35 +1,40 @@
 <?php get_header() ?>
-<h1 class="bg-dark btn btn-block tituloSeccion"><?php the_category('/'); ?></h1>
 
 <div class="row">
-    <div class="col-lg-9">
-<!-- entradas -->
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-            <div class="card-body entradas col-lg-4">
-                <a  href="<?php the_permalink() ?>">
-                    <h2>
-                        <?php the_title()?>
-                    </h2>
-                </a>
-                <p><?php the_tags('Precio '); ?></p>
-                <!-- <h6><p class="small mb-0">fecha: <?php the_time('F j, Y'); ?></p>
-                <p class="small mb-0">autor: <?php the_author(); ?></p>
-                <p class="small mb-0">etiquetas: <?php the_tags('', '/', ''); ?>
-                <p class="small mb-0">categoria: <?php the_category('/'); ?> </h6> -->
+<div class="col-lg-12">
+        <h1 class="text-center">
+        <?php the_category('/'); ?>
+        </h1>
+        <hr>
+    </div>
+    <div class="col-lg-12 padreProducto" >   
+    <?php 
+        $the_query = new WP_Query( array( 'posts_per_page' => 99,  'category_name' => ''));
         
-        <?php if ( has_post_thumbnail() ) {
-            the_post_thumbnail('post-thumbnails' , array('class' => 'img-fluid mb-3'));}?>
-            <?php the_excerpt()?>
-            <a href="<?php the_permalink()?>" class="btn btn-primary btn-block">ir al articulo
+        if ( $the_query->have_posts() ) : ?>    
+        <?php while ( $the_query->have_posts() ) :
+                    $the_query->the_post(); ?>
+        <div class="col-lg-2 historia" >
+            <a href="<?php the_permalink() ?>">
+                <p><?php the_title() ?></p>
+                <hr>
+                <?php if ( has_post_thumbnail() ) 
+                    {the_post_thumbnail('medium' , array('class' => 'img-fluid'));
+                    }?>
+                <hr>
+                <p><?php the_excerpt() ?></p><hr>
             </a>
-            <hr>
+                <p class="enlace"><?php the_tags('Precio: $')?></p>
+                <hr>
         </div>
-<?php endwhile; endif; ?>
-<div class="jumbotron">ç</div>
-<div class="card-body entradas col-lg-12">
-        <?php get_template_part('template-parts/content', 'paginacion'); ?>
-    </div> 
-<!-- /entradas -->
+            <?php endwhile ?>
+            <?php wp_reset_postdata();
+                    else : ?>
+                        <p>no posts found </p> 
+                <?php endif; ?>
+            <hr>  
+    </div>
 </div>
+
 
 <?php get_footer() ?>

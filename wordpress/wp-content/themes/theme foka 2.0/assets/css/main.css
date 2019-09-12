@@ -15,6 +15,7 @@ h1{
     margin: 0;
     font-family: 'Lobster Two', cursive;
     color: #33ff99;
+    
 }
 
 h2{
@@ -34,6 +35,13 @@ p{
     text-align: justify;
     font-family: 'Roboto Mono', monospace;
     font-size: 15px;
+}
+
+.enlace{
+        text-decoration: none;
+        pointer-events: none;
+        cursor: default;
+        
 }
 .contenedorNET{
     margin: 10px auto;
