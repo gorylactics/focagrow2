@@ -24,9 +24,16 @@ h2{
     color: #33ff99;
 }
 h3{
-    
+    margin-top: 15px;
+    text-align: center;
     font-family: 'Bungee Inline', cursive;
-    color: #33ff99;
+    color: orangered;
+}
+
+p{
+    text-align: justify;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
 }
 .contenedorNET{
     margin: 10px auto;
@@ -224,7 +231,14 @@ border: solid 5px #B0C4DE;
     margin-bottom: 10px;
 }
 
-
+/* single */
+.single2{
+    
+    margin-top: 25px;
+    background-color: paleturquoise;
+    padding: 10px;
+    
+}
 
 @media (max-width: 1080px) { 
 
@@ -377,6 +391,12 @@ border: solid 5px #B0C4DE;
         background-color: orangered;
     
     }
+    .single2{
+        
+        margin-left: 25px;
+         
+        
+     }
     
     .footer{
 
