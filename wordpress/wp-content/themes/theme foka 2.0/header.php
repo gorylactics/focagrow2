@@ -14,7 +14,7 @@
 <!-- navbar -->
     <nav class="col-lg-12 navbar navbar-expand-lg navbar-light" style="margin-top:-46px;">
       <div class="container padre2">
-        <a class="navbar-brand col-lg-3" href="<?php echo esc_url(home_url('/')); ?>">
+        <a class="navbar-brand col-lg-3 link" href="<?php echo esc_url(home_url('/')); ?>">
           <img  class="img-fluid logo" 
                 src="<?php bloginfo('template_url')?>/assets/img/partes/logo.png" alt="">
         </a>

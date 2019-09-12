@@ -16,6 +16,12 @@
                 <p>
                     <?php the_content() ?>
                 </p>
+                <p>
+                    Valor:<?php the_tag() ?>
+                </p>
+
+               
+
                
 
 

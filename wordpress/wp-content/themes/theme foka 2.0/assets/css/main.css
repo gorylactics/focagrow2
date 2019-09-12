@@ -8,6 +8,8 @@ body{
       
       
 }
+
+
 h1{
     font-size: 45px;
     margin: 0;
@@ -24,11 +26,11 @@ h2{
 h3{
     
     font-family: 'Bungee Inline', cursive;
+    color: #33ff99;
 }
 .contenedorNET{
     margin: 10px auto;
     width: 60%;
-   
     display: flex;
     align-items: unset;
     justify-content: center;   
@@ -93,6 +95,14 @@ hr{
     padding: 1vh;
 }
 
+.navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(38, 142, 33);
+}
+
+.nav-link:hover {
+    color: rgba(234, 19, 19, 0.7);
+}
+
 
 
 
@@ -146,11 +156,12 @@ hr{
 
   
 
-.card{
+.seccion{
 
     width: 48%;
     margin: 5px;
-    border-radius: 0;
+    /* margin-bottom: -150px; */
+   
 }
 
 .tarjeta{
@@ -202,8 +213,9 @@ border: solid 5px #B0C4DE;
     padding-top: 20px;
    
 }
-.rrss path{
-    background-color: orangered;
+
+.iconoGlobo{
+    height: 65.7px;
 }
 
 .btn{
@@ -332,11 +344,11 @@ border: solid 5px #B0C4DE;
 
     }
 
-    .card{
-    
+    .seccion{
+
         width: 100%;
-        
-    
+        margin: 5px;
+       
     }
 
     .recomendado{

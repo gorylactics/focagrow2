@@ -11,27 +11,27 @@
     </div>
   </div>
   <div class="container padre col-lg-9">
-    <div class="card">
+    <div class="seccion">
       <a href="semilla">
         <img class="img-fluid" src="<?php bloginfo('template_url')?>/assets/img/secciones/semillas.JPEG" alt="">
       </a>
     </div>
-    <div class="card">
+    <div class="seccion">
       <a href="extracciones">
         <img class="img-fluid" src="<?php bloginfo('template_url')?>/assets/img/secciones/extracciones.JPEG" alt="">
       </a>
     </div>
-    <div class="card">
+    <div class="seccion">
       <a href="fertilizantes">
         <img class="img-fluid" src="<?php bloginfo('template_url')?>/assets/img/secciones/fertilizantes.JPEG" alt="">
       </a>
     </div>
-    <div class="card">
+    <div class="seccion">
       <a href="iluminacion">
         <img class="img-fluid" src="<?php bloginfo('template_url')?>/assets/img/secciones/iluminacion.JPEG" alt="">
       </a>
     </div>
-    <div class="card">
+    <div class="seccion">
       <a href="sustrato">
         <img class="img-fluid" src="<?php bloginfo('template_url')?>/assets/img/secciones/sustratos.JPEG" alt="">
       </a>
@@ -44,7 +44,7 @@
 
 <!-- seccion 2 -->
   <div class="col-lg-9 contenedorRecomendados">
-    <a href="recomendados">
+    <a  class="link" href="recomendados">
       <h3 class="mt-3" style="text-align: center;">Recomendados de foca</h3>
     </a>
     <hr>
@@ -54,7 +54,7 @@
         if ( $the_query->have_posts() ) : ?>    
       <?php while ( $the_query->have_posts() ) :
                   $the_query->the_post(); ?>
-        <a href="<?php the_permalink() ?>">
+        <a class="link" href="<?php the_permalink() ?>">
           <?php if ( has_post_thumbnail() ) 
             {the_post_thumbnail('post-thumbnails' , array('class' => 'img-fluid recomendado '));
             }
@@ -70,7 +70,7 @@
   </div>
           
   <div class="col-lg-12">
-    <a href="reportajes">
+    <a class="link" href="reportajes">
       <h3 class="mt-3" style="text-align: center;">Historias de una foca</h3>
     </a>
     <hr>
@@ -86,7 +86,7 @@
             <?php while ( $the_query->have_posts() ) :
                           $the_query->the_post(); ?>
             <div class="col-lg-3 historia" >
-                <a href="<?php the_permalink() ?>">
+                <a class="link" href="<?php the_permalink() ?>">
                 <p><?php the_title() ?></p>
                 <hr>
                   <?php if ( has_post_thumbnail() ) 
@@ -94,6 +94,7 @@
                         }
                     ?><hr>
                     <?php the_excerpt() ?>
+                    
                 </a>
                 </div>
             <?php endwhile ?>

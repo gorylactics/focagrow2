@@ -15,7 +15,7 @@
         <img src="<?php bloginfo('template_url')?>/assets/images/globe-americas-solid.svg" alt="rrss" class="rrss" >
       </a>
     <hr>
-     <h6> www.focagrow.cl </h6>
+     <h6> focagrow.cl </h6>
     </div>
 
     <div class="col-lg-4 rrss">
