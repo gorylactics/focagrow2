@@ -12,14 +12,14 @@ h1{
     font-size: 45px;
     margin: 0;
     font-family: 'Lobster Two', cursive;
-    color: #B0C4DE;
+    color: #33ff99;
 }
 
 h2{
     font-size: 45px;
     margin: 0;
     font-family: 'Lobster Two', cursive;
-    color: #B0C4DE;
+    color: #33ff99;
 }
 h3{
     
@@ -79,6 +79,18 @@ hr{
 .navbar{
     background-color: #454d66;
     
+}
+
+.menu-item{
+    
+    font-family: 'Roboto Mono', monospace;
+    
+}
+.navbar-light .navbar-nav .nav-link {
+    text-align: center;
+    color:#3cc47c;
+    margin: 0;
+    padding: 1vh;
 }
 
 
@@ -208,14 +220,14 @@ border: solid 5px #B0C4DE;
         font-size: 32px;
         margin: 0;
         font-family: 'Lobster Two', cursive;
-        color: #B0C4DE;
+        color: #33ff99;
     }
     
     h2{
         font-size: 32px;
         margin: 0;
         font-family: 'Lobster Two', cursive;
-        color: #B0C4DE;
+        color: #33ff99;
     }
     h3{
         
